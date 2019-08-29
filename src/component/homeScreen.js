@@ -1,6 +1,6 @@
 import React, {Component} from "react";
 import {ImageBackground, Text, View, ActivityIndicator, Image} from 'react-native';
-import Login from "./login";
+import Login from "../route/index";
 
 class Homescreen extends React.Component{
     state={

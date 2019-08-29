@@ -1,5 +1,5 @@
 import React, {Component} from 'react';
-import {Text, View, Image} from 'react-native';
+import {Text, View, Image, Button} from 'react-native';
 import Propsis from './props'
 
 class Login extends React.Component{
@@ -20,7 +20,7 @@ class Login extends React.Component{
               </View>
           </View>
           <View style={{alignItems:'center'}}>
-                <Image style={{width:300, height:180}} source={require('../image/download.jpeg')}/>
+                <Image style={{width:300, height:150}} source={require('../image/download.jpeg')}/>
           </View>
           <Text style={{fontSize:16, paddingLeft:'3%'}}>Developer React Native</Text>
           </View>
@@ -34,11 +34,13 @@ class Login extends React.Component{
               </View>
           </View>
           <View style={{alignItems:'center'}}>
-                <Image style={{width:300, height:175}} source={require('../image/images22.jpeg')}/>
+                <Image style={{width:300, height:150}} source={require('../image/images22.jpeg')}/>
           </View>
           <Text style={{fontSize:16, paddingLeft:'3%'}}>Developer React Native</Text>
           </View>
-          
+           <Button 
+        title='HOME'
+        onPress={()=>this.props.navigation.navigate('VeriScreen')}/>
       </View>
     )
   }
